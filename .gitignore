@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/KPublishingMenuBossTracks/Music WAVs/MenuMusic3_V2/Harp/MenuMusic3_V2H_FULL.wav
+Assets/KPublishingMenuBossTracks/Music WAVs/MenuMusic3_V2/Harp/MenuMusic3_V2H_LOOPwEND.wav
+Assets/KPublishingMenuBossTracks/Music WAVs/MenuMusic3_V2/Piano/MenuMusic3_V2P_FULL.wav
+Assets/KPublishingMenuBossTracks/Music WAVs/MenuMusic3_V2/Piano/MenuMusic3_V2P_LOOPwEND.wav
