@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: f4c780626572660429e1ecda781f013e
+guid: 416244ad1e07d424d8ad05f69b934995
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: StingrayPBS6
-    second: {fileID: 2100000, guid: bece00ffcc66a7949a1713ee936c99cb, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
