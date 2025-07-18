@@ -123,6 +123,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &76115901
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.745
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7265969
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.406026
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c925bc37f33f39443a9574eae05e5580,
+        type: 3}
+      propertyPath: m_Name
+      value: capstone_chair
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c925bc37f33f39443a9574eae05e5580, type: 3}
 --- !u!1 &256745151
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +870,7 @@ PrefabInstance:
     - target: {fileID: 3693079057214043440, guid: b6f8466e8056cbe4e840dbd5a8368a68,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.73
       objectReference: {fileID: 0}
     - target: {fileID: 3693079057214043440, guid: b6f8466e8056cbe4e840dbd5a8368a68,
         type: 3}
@@ -865,7 +933,7 @@ PrefabInstance:
     - target: {fileID: 3906941241033079838, guid: ff9595a45c904ab4e85ef3f7fbc3d534,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.58
       objectReference: {fileID: 0}
     - target: {fileID: 3906941241033079838, guid: ff9595a45c904ab4e85ef3f7fbc3d534,
         type: 3}
@@ -1074,7 +1142,7 @@ PrefabInstance:
     - target: {fileID: 8889746230875205232, guid: c0a53544b853d8f418534ef2320004b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.639
+      value: 5.661
       objectReference: {fileID: 0}
     - target: {fileID: 8889746230875205232, guid: c0a53544b853d8f418534ef2320004b9,
         type: 3}
@@ -1084,7 +1152,7 @@ PrefabInstance:
     - target: {fileID: 8889746230875205232, guid: c0a53544b853d8f418534ef2320004b9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.602
+      value: -0.591
       objectReference: {fileID: 0}
     - target: {fileID: 8889746230875205232, guid: c0a53544b853d8f418534ef2320004b9,
         type: 3}
@@ -1212,3 +1280,4 @@ SceneRoots:
   - {fileID: 7409428226125636981}
   - {fileID: 6467167526523975119}
   - {fileID: 8652676151620304987}
+  - {fileID: 76115901}

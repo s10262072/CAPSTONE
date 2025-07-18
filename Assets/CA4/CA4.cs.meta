@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d51a8b8fcbcfc1e49a319e100a845abf
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hpTextPrefab: {fileID: 1443615722758605045, guid: f73e10b884405b0468d53e8e88c75a79,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
