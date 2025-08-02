@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+public class SceneChangerByIndex : MonoBehaviour
 {
-    public string sceneName;
+    public int sceneIndex; // Set this in the Inspector (e.g., 1 for next scene)
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene(sceneIndex);
         }
     }
 }
