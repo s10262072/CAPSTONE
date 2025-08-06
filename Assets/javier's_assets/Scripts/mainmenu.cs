@@ -14,7 +14,6 @@ public class MainMenu : SharedMenu
 {
     public GameObject creditsMenu;
     public GameObject optionsMenu;
-
     public AudioMixer BGM;
 
     public void PlayGame()

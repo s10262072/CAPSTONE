@@ -71,8 +71,8 @@ public class GameManager : MonoBehaviour
     /// Increases the score of the player by <paramref name="scoreToAdd"/>
     /// </summary>
     /// <param name="scoreToAdd">The amount to increase by</param>
-
-
+    
+    
     public void IncreaseScore(int scoreToAdd)
     {
         // Increase the score of the player by scoreToAdd

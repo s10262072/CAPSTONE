@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SharedMenu : MonoBehaviour
 {
+    public GameObject trueIcon;
+    public GameObject falseIcon;
     public GameObject helpMenu;
     public GameObject mainMenu;
     [SerializeField]
@@ -20,8 +22,7 @@ public class SharedMenu : MonoBehaviour
         currentPage.SetActive(false);
         mainMenu.SetActive(true);
     }
-
-
+    
 
     public void UnlockMouse()
     {
@@ -33,4 +34,6 @@ public class SharedMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+    
+    
 }
