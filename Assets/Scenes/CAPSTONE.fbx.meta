@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: 4dca11e4a9b03d849a0559a27408be51
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTower1_First
+    second: {fileID: 2100000, guid: 0c8f5cb53611762449ec3a36729619db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTower1_Second
+    second: {fileID: 2100000, guid: 5102fe27a1ddceb4d8eec44c43587838, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTower1_Third
+    second: {fileID: 2100000, guid: e81e1d2e9634912499b912d3f4b7d448, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTower2_First
+    second: {fileID: 2100000, guid: 94c7294b4b82d72489b5af3cae840ca6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTower2_Second
+    second: {fileID: 2100000, guid: 538cdeea2f3640b44bce4fa62cc84714, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTower2_Third
+    second: {fileID: 2100000, guid: 071635df5aa669a4c8d10f06bdea81a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTowerExtended1_First
+    second: {fileID: 2100000, guid: 694f674b9f756f2429edfeb19caff770, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTowerExtended1_Second
+    second: {fileID: 2100000, guid: 20358e40a47bf0a47bfac7c6dc330be4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTowerExtended1_Third
+    second: {fileID: 2100000, guid: ab2c68e226cdd16449af031c6c98d9c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTowerExtended2_First
+    second: {fileID: 2100000, guid: 4c73df9a64d62604d814eeed7a2487ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTowerExtended2_Second
+    second: {fileID: 2100000, guid: 3a7111e9a190a5142b68642020bcab8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutTowerExtended2_Third
+    second: {fileID: 2100000, guid: 5a25fb3a718f6ed47a9f1ebc4646e1e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tower3_First
+    second: {fileID: 2100000, guid: 17ac8dd18748bc64dbcfe67ea2344412, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tower3_Second
+    second: {fileID: 2100000, guid: fc9f907965d037e41812d9aea77f1507, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Back1
+    second: {fileID: 2100000, guid: 4a0c1d6322abd7e48b0ab51eb4e10569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Back1_Second
+    second: {fileID: 2100000, guid: ebb0c29b43d57e143b03cf108232fb34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Back1_Third
+    second: {fileID: 2100000, guid: e35a2c8d746cfdf4a85dec990d06e96c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Back2
+    second: {fileID: 2100000, guid: 0bc2ad40004f36e429c34da2e88ee0a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Back2_Second
+    second: {fileID: 2100000, guid: 424e8718dec7af14f9aa80a438edd218, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_DoorOutline1
+    second: {fileID: 2100000, guid: 82e733ae8248e534ba94714362ddbaf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_DoorOutline1_Second
+    second: {fileID: 2100000, guid: 7d460b897df35ec48b83b8316950926f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_DoorOutline2
+    second: {fileID: 2100000, guid: 4bad062e72a95af489a5fc1354ccb037, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_DoorOutline2_Second
+    second: {fileID: 2100000, guid: 43cc63bceecc0a44187a4d846e5e6ddd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Entrance1
+    second: {fileID: 2100000, guid: 0069242bcd496bd41b5b1759d45e8f73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Entrance1_Second
+    second: {fileID: 2100000, guid: 2fa1ce39edc819d4499bdf4d6913acec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Entrance1_Third
+    second: {fileID: 2100000, guid: 4fa3bdec31a3a5a4a8203a826e00ea76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Entrance2_First
+    second: {fileID: 2100000, guid: 2ce5fb44ac2ad254f8b7690ef33fe329, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Entrance2_Second
+    second: {fileID: 2100000, guid: 74a9d3a9464882c4eb388ad94e6dad3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Entrance2_Third
+    second: {fileID: 2100000, guid: a62fd661ee08065448f3c54954a6d407, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_EntranceDoor
+    second: {fileID: 2100000, guid: 75744bc4b8f54b544bc6e6e3d9ab417e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_EntranceDoor2
+    second: {fileID: 2100000, guid: 176a6aa9acb019b4ea1ec3f375b559ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Floor
+    second: {fileID: 2100000, guid: 3a7837bd9acdf5b43a310b12849e8eb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Floor2
+    second: {fileID: 2100000, guid: 2274e151b15895d43914660503ed7a15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_LampPost1
+    second: {fileID: 2100000, guid: 8d00fd21c80204c42a0882bc5848637d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_LampPost1_Second
+    second: {fileID: 2100000, guid: 9f79e57f7809bf843b9bd2b30f94c030, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_LampPost2
+    second: {fileID: 2100000, guid: 2d9ecaf193a0be7419669059bc379a1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_LampPost_Third
+    second: {fileID: 2100000, guid: f97959a96b90ec54eb93f9e35e65fa2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Tower1
+    second: {fileID: 2100000, guid: 00da17bb7cb0f1641b28ba8b3bfe6309, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Tower1_Second
+    second: {fileID: 2100000, guid: 9deb22ce7a23c8146a1cb30c87c1fedb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Wall1
+    second: {fileID: 2100000, guid: c95850062794a2d45b63157ff3a10b2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Wall1_Second
+    second: {fileID: 2100000, guid: 3b2d9f35ba7ad6a4db36516e7a4fd259, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Wall1_Third
+    second: {fileID: 2100000, guid: 6d832cd3f68f7864f9806558f4f02ec9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Wall2_First
+    second: {fileID: 2100000, guid: 63139fd455086474582b3c412afaa4fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Wall2_Second
+    second: {fileID: 2100000, guid: 6e40aef4b73cf0a41855ffc8ac04697a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Window1
+    second: {fileID: 2100000, guid: 87ad7a4cb7570bf49833f38897c7556e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_Window2
+    second: {fileID: 2100000, guid: 5c8b255c0bdc1af4ba0e6ac015008ec7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: castle_WindowOutline2
+    second: {fileID: 2100000, guid: bc96270713451c64d84d5a86264f0fd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: openPBR_shader1
+    second: {fileID: 2100000, guid: e1e8777b6d1c97f44b1b27eb3748c863, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
