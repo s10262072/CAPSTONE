@@ -72,6 +72,14 @@ public class GameManager : MonoBehaviour
     /// </summary>
     /// <param name="scoreToAdd">The amount to increase by</param>
     
+    public TextMeshProUGUI potionText;
+
+    /// <summary>
+    /// Text for potion Count
+    /// </summary>
+    /// <param name="scoreToAdd"></param>
+
+    public int potionAmount = 1;
     
     public void IncreaseScore(int scoreToAdd)
     {
@@ -83,7 +91,31 @@ public class GameManager : MonoBehaviour
         scoreText.text = currentScore.ToString();
         GameManager.instance.UpdateObjectiveText();
     }
-
+    
+    public void IncreasePotion(int potionToAdd)
+    {
+        // Increase the score of the player by scoreToAdd
+        potionAmount += potionToAdd;
+        
+        potionText.text = potionAmount.ToString();
+    }
+    
+    public void UsePotion()
+    {
+        if (potionAmount > 0 && currentHealth <= 5)
+        {
+            currentHealth += 1;
+            Debug.Log("Used potion: +1 HP");
+        }
+        else if (potionAmount <= 0)
+        {
+            Debug.Log("No potions left!");
+        }
+        else
+        {
+            Debug.Log("Health too high to use potion.");
+        }
+    }
     public void UpdateObjectiveText()
     {
 

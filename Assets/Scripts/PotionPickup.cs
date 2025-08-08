@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PotionPickup : MonoBehaviour
 {
-    public int potionAmount = 1;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -13,7 +11,7 @@ public class PotionPickup : MonoBehaviour
             PlayerStats stats = other.GetComponent<PlayerStats>();
             if (stats != null)
             {
-                stats.AddPotion(potionAmount);
+                GameManager.instance.IncreasePotion(1);
                 Debug.Log("Picked up potion!");
                 Destroy(gameObject); // Remove the potion from the scene
             }
