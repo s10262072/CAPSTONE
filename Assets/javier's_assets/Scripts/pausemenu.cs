@@ -67,4 +67,11 @@ public class PauseMenu : SharedMenu
         Time.timeScale = 1f;
         GameManager.instance.GoToScene(restartindex);
     }
+    
+    public void HelpGame()
+    {
+        helpMenu.SetActive(true);
+        currentPage = helpMenu;
+        pauseContent.SetActive(false);
+    }
 }
