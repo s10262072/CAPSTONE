@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Castle.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/interior.unity
     guid: 0e4a3c707648c854da502c8c8dd24f67
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/endgame.unity
     guid: e7daa5fa444a1b34ea588b9e9c4582cf
   m_configObjects:
