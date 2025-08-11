@@ -27,11 +27,13 @@ public class MainMenu : SharedMenu
         tutorial = GameManager.tutorial;
         if (tutorial == false)
         {
+            Debug.Log("reading tutorial");
             GameManager.tutorial = true;
             tutorialMenu.SetActive(true);
         }
         else if (tutorial == true)
         {
+            Debug.Log("satrting game");
             LockMouse();
             GameManager.instance.GoToScene(1);
         }
