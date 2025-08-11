@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SharedMenu : MonoBehaviour
 {
-    public GameObject trueIcon;
-    public GameObject falseIcon;
     public GameObject helpMenu;
     public GameObject mainMenu;
     [SerializeField]

@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/levels/Menu.unity
     guid: 3060a24df66329f4d910beb919a333e6
   - enabled: 1
-    path: Assets/Scenes/Castle.unity
+    path: Assets/Scenes/levels/Castle.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/interior.unity
+  - enabled: 0
+    path: Assets/Scenes/levels/interior.unity
     guid: 0e4a3c707648c854da502c8c8dd24f67
-  - enabled: 1
-    path: Assets/Scenes/endgame.unity
+  - enabled: 0
+    path: Assets/Scenes/levels/endgame.unity
     guid: e7daa5fa444a1b34ea588b9e9c4582cf
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,

@@ -14,14 +14,27 @@ public class MainMenu : SharedMenu
 {
     public GameObject creditsMenu;
     public GameObject optionsMenu;
+    public GameObject tutorialMenu;
+    public GameManager GameManager;
+    public bool tutorial = false;
     public AudioMixer BGM;
 
     public void PlayGame()
     {
         // AudioSource.PlayClipAtPoint(clickAudio, transform.position, 1f);
-        LockMouse();
+        
         Time.timeScale = 1f;
-        GameManager.instance.GoToScene(1);
+        tutorial = GameManager.tutorial;
+        if (tutorial == false)
+        {
+            GameManager.tutorial = true;
+            tutorialMenu.SetActive(true);
+        }
+        else if (tutorial == true)
+        {
+            LockMouse();
+            GameManager.instance.GoToScene(1);
+        }
     }
     public void HelpGame()
     {

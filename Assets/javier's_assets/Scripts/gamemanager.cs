@@ -81,6 +81,8 @@ public class GameManager : MonoBehaviour
 
     public int potionAmount = 1;
     
+    public bool tutorial = false;
+    
     public void IncreaseScore(int scoreToAdd)
     {
         // Increase the score of the player by scoreToAdd
@@ -118,7 +120,7 @@ public class GameManager : MonoBehaviour
     }
     public void UpdateObjectiveText()
     {
-
+        
     }
 
 
