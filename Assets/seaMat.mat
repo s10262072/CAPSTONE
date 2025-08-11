@@ -66,7 +66,7 @@ Material:
     - _Depth: 42.8
     - _Displacement: 10.38
     - _Foam_Depth: 3.52
-    - _Foam_Strength: 0.04
+    - _Foam_Strength: 11.6
     - _Foam_Tile: 27.5
     - _Normal_Strength: 0
     - _QueueControl: 0
@@ -74,6 +74,7 @@ Material:
     - _Smoothness: 0
     - _Strength: 2
     m_Colors:
-    - _Deep_Water_Colour: {r: 1, g: 0.13333334, b: 0, a: 1}
-    - _Shallow_Water_Colour: {r: 1, g: 0.26371306, b: 0, a: 0.7607843}
+    - _Deep_Water_Colour: {r: 1, g: 0, b: 0, a: 1}
+    - _Emission: {r: 1, g: 0, b: 0, a: 1}
+    - _Shallow_Water_Colour: {r: 1, g: 0.2627451, b: 0, a: 0.7607843}
   m_BuildTextureStacks: []
