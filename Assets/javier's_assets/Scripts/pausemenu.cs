@@ -24,9 +24,10 @@ public class PauseMenu : SharedMenu
         if (Input.GetKeyDown(KeyCode.Tab) && sceneIndex != 0)
         {
             Debug.Log("paused");
-            if (isPaused)
+            if (isPaused == true)
             {
                 ResumeGame();
+                
             }
             else
             {
@@ -49,6 +50,7 @@ public class PauseMenu : SharedMenu
         pauseContent.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        helpMenu.SetActive(false);
     }
 
     public void backtostart()
