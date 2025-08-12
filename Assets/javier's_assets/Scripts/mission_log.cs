@@ -21,6 +21,7 @@ public class MissionLog : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M) && sceneIndex != 0)
         {
+            GameManager.instance.UpdateObjectiveText();
             if (MissionisOpen)
             {
                 CloseMission();
