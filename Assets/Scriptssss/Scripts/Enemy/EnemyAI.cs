@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Health))]
-public class EnemyAI : MonoBehaviour
+public class enemyAI : MonoBehaviour
 {
     public float detectRange = 12f;
     public float attackRange = 2.2f;
