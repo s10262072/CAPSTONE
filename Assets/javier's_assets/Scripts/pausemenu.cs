@@ -15,7 +15,8 @@ public class PauseMenu : SharedMenu
     public int mainMenuIndex = 0;
     public GameObject pauseContent;
     public static bool isPaused = false;
-
+    public GameObject mainUI;
+    public GameObject objectivesUI;
     void Update()
     {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -42,6 +43,8 @@ public class PauseMenu : SharedMenu
         pauseContent.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        mainUI.SetActive(false);
+        objectivesUI.SetActive(false);
     }
 
     public void ResumeGame()
@@ -51,6 +54,8 @@ public class PauseMenu : SharedMenu
         Time.timeScale = 1f;
         isPaused = false;
         helpMenu.SetActive(false);
+        mainUI.SetActive(true);
+        objectivesUI.SetActive(true);
     }
 
     public void backtostart()

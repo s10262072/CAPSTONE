@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
     {
         if (minionsDestroyed < 10)
         {
-            currentObjective.text = $"- Find the remaining coins hidden in the ruins {minionsDestroyed}/10";            
+            currentObjective.text = $"- Vanqiuish the Dark Warlord's minions {minionsDestroyed}/10";            
         }
         else if (minionsDestroyed == 10 && subBossDeafeated == false)
         {
@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
         }
         else if (minionsDestroyed == 10 && subBossDeafeated == true && bossDeafeated == false)
         {
-            currentObjective.text = $"Head to the portal to defeat the dark king";
+            currentObjective.text = $"Head to the portal to defeat the Dark Warlord";
         }
         else if ( bossDeafeated == true)
         {
