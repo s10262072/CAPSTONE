@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 public class MissionLog : MonoBehaviour
 {
     public GameObject missionContent;
-    public static bool MissionisOpen = false;
+    public static bool MissionisOpen = true;
 
     void Update()
     {

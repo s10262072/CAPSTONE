@@ -18,28 +18,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI interactionText;
 
-    /// <summary>
-    /// Status of the Special Collectible
-    /// </summary>
-    [SerializeField]
-    public bool specialCollected = false;
-
-    /// <summary>
-    /// Status of the Tutorial Healthpack
-    /// </summary>
-    [SerializeField]
-    public bool medkitCollected = false;
-
 
     /// <summary>
     /// The UI text that stores the player score
     /// </summary>
     public TextMeshProUGUI healthText;
-
-    /// <summary>
-    /// The UI image for the player spyglass (TextMeshPro image)
-    /// </summary>
-    public Image collectibleImage;
     
     /// <summary>
     /// The UI text that stores the player's objective
@@ -52,10 +35,6 @@ public class GameManager : MonoBehaviour
     public Animator transition;
 
     public float transitionTime = 1f;
-    /// <summary>
-    /// The current health of the player
-    /// </summary>
-    public int currentHealth = 3;
 
     /// <summary>
     /// The count of collectibles collected.
@@ -83,6 +62,11 @@ public class GameManager : MonoBehaviour
     
     public bool tutorial = false;
     
+    public int minionsDestroyed = 0;
+
+    public bool subBossDeafeated = false;
+    
+    public bool bossDeafeated = false;
     public void IncreaseScore(int scoreToAdd)
     {
         // Increase the score of the player by scoreToAdd
@@ -104,9 +88,8 @@ public class GameManager : MonoBehaviour
     
     public void UsePotion()
     {
-        if (potionAmount > 0 && currentHealth <= 5)
+        if (potionAmount > 0)
         {
-            currentHealth += 1;
             Debug.Log("Used potion: +1 HP");
         }
         else if (potionAmount <= 0)
@@ -120,17 +103,25 @@ public class GameManager : MonoBehaviour
     }
     public void UpdateObjectiveText()
     {
-        
+        if (minionsDestroyed < 10)
+        {
+            currentObjective.text = $"- Find the remaining coins hidden in the ruins {minionsDestroyed}/10";            
+        }
+        else if (minionsDestroyed == 10 && subBossDeafeated == false)
+        {
+            currentObjective.text = $"Defeat General Paleskull";
+        }
+        else if (minionsDestroyed == 10 && subBossDeafeated == true && bossDeafeated == false)
+        {
+            currentObjective.text = $"Head to the portal to defeat the dark king";
+        }
+        else if ( bossDeafeated == true)
+        {
+            currentObjective.text = $"- Exit the ship and collect the coins {collectibleCount}/5 \n- Hint: The collect the magnifying glass to see what is supposed to be seen";
+        }
     }
 
-
-    public void ChangeHealth(int hpToChange)
-    {
-        // Change the health of the player by hpToChange
-        currentHealth += hpToChange;
-        currentHealth = Mathf.Max(0, currentHealth);
-        healthText.text = $"Health remaining: {currentHealth}";
-    }
+    
     public void GoToScene(int scene)
     {
         StartCoroutine(Loadlevel(scene));
