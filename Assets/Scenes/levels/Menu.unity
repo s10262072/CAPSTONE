@@ -5131,6 +5131,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BGM
       objectReference: {fileID: 0}
+    - target: {fileID: 3521132241679448018, guid: 45a833a86a349bf439a476ab7ea6b387,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5319060888694155817, guid: 45a833a86a349bf439a476ab7ea6b387,
         type: 3}
       propertyPath: m_LocalPosition.x
