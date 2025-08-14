@@ -398,10 +398,20 @@ PrefabInstance:
       propertyPath: objectivesUI
       value: 
       objectReference: {fileID: 1305294177}
+    - target: {fileID: 3062647603098486167, guid: adb5763b73aac2b44a9b4ed802d45be3,
+        type: 3}
+      propertyPath: pauseContent
+      value: 
+      objectReference: {fileID: 1128507651}
     - target: {fileID: 4336886527526252791, guid: adb5763b73aac2b44a9b4ed802d45be3,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457448819691363781, guid: adb5763b73aac2b44a9b4ed802d45be3,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8457448819691363781, guid: adb5763b73aac2b44a9b4ed802d45be3,
         type: 3}
