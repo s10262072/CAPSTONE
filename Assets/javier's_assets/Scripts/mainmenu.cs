@@ -19,7 +19,6 @@ public class MainMenu : SharedMenu
     public bool tutorial = false;
     public AudioMixer BGM;
 
-
     public void PlayGame()
     {
         // AudioSource.PlayClipAtPoint(clickAudio, transform.position, 1f);
@@ -34,7 +33,7 @@ public class MainMenu : SharedMenu
         }
         else if (tutorial == true)
         {
-            Debug.Log("starting game");
+            Debug.Log("satrting game");
             LockMouse();
             GameManager.instance.GoToScene(1);
         }
@@ -81,6 +80,4 @@ public class MainMenu : SharedMenu
         }
         Debug.Log(toggleValue);
     }
-
-    
 }
