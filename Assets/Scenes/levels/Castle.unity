@@ -115304,6 +115304,11 @@ PrefabInstance:
       objectReference: {fileID: 9000000, guid: 04bc47ba6e133a9498297a3f94cd9a2b, type: 3}
     - target: {fileID: 3396786018867618124, guid: 2ef7504ca5b8a7a4e8140401e80348cb,
         type: 3}
+      propertyPath: Gravity
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396786018867618124, guid: 2ef7504ca5b8a7a4e8140401e80348cb,
+        type: 3}
       propertyPath: MoveSpeed
       value: 80
       objectReference: {fileID: 0}
@@ -115316,6 +115321,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerArmature
+      objectReference: {fileID: 0}
+    - target: {fileID: 5874954248904280055, guid: 2ef7504ca5b8a7a4e8140401e80348cb,
+        type: 3}
+      propertyPath: m_StepOffset
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6523588701771596763, guid: 2ef7504ca5b8a7a4e8140401e80348cb,
         type: 3}
