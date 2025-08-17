@@ -5,7 +5,6 @@ public class PotionCollect : MonoBehaviour
 {
     public TMP_Text potionUIText; // The UI text showing potion count
     private int potionCount = 0;  // Current potions
-
     void Start()
     {
         UpdatePotionUI();
