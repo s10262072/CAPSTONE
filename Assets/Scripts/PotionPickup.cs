@@ -3,9 +3,6 @@ using TMPro; // If using TextMeshPro for UI
 
 public class PotionCollect : MonoBehaviour
 {
-    public TMP_Text potionUIText; // The UI text showing potion count
-    private int potionCount = 0;  // Current potions
-
     void Start()
     {
         UpdatePotionUI();
@@ -15,7 +12,6 @@ public class PotionCollect : MonoBehaviour
     {
         if (other.CompareTag("Potion"))
         {
-            potionCount++;
             UpdatePotionUI();
             Destroy(other.gameObject); // Remove the collected potion
         }
@@ -23,7 +19,7 @@ public class PotionCollect : MonoBehaviour
 
     void UpdatePotionUI()
     {
-        potionUIText.text = potionCount.ToString();
+        GameManager.instance.IncreasePotion(1);
     }
 }
 

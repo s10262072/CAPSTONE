@@ -19,10 +19,6 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI interactionText;
 
 
-    /// <summary>
-    /// The UI text that stores the player score
-    /// </summary>
-    public TextMeshProUGUI healthText;
     
     /// <summary>
     /// The UI text that stores the player's objective
@@ -63,8 +59,7 @@ public class GameManager : MonoBehaviour
     public bool tutorial = false;
     
     public int minionsDestroyed = 0;
-
-    public bool subBossDeafeated = false;
+    
     
     public bool bossDeafeated = false;
     public void IncreaseScore(int scoreToAdd)
@@ -82,7 +77,7 @@ public class GameManager : MonoBehaviour
     {
         // Increase the score of the player by scoreToAdd
         potionAmount += potionToAdd;
-        
+        Debug.Log("potion added");
         potionText.text = potionAmount.ToString();
     }
     
@@ -107,17 +102,13 @@ public class GameManager : MonoBehaviour
         {
             currentObjective.text = $"- Vanqiuish the Dark Warlord's minions {minionsDestroyed}/10";            
         }
-        else if (minionsDestroyed == 10 && subBossDeafeated == false)
-        {
-            currentObjective.text = $"Defeat General Paleskull";
-        }
-        else if (minionsDestroyed == 10 && subBossDeafeated == true && bossDeafeated == false)
+        else if (minionsDestroyed == 10 && bossDeafeated == false)
         {
             currentObjective.text = $"Head to the portal to defeat the Dark Warlord";
         }
         else if ( bossDeafeated == true)
         {
-            currentObjective.text = $"- Exit the ship and collect the coins {collectibleCount}/5 \n- Hint: The collect the magnifying glass to see what is supposed to be seen";
+            currentObjective.text = $"- Claim your prize for your triumph";
         }
     }
 
@@ -136,21 +127,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-
-    public void RestartGamelvl0()
-    {
-
-    }
-
-    public void RestartGamelvl1()
-    {
-
-    }
-
-    public void RestartGamelvl2()
-    {
-
-    }
+    
 
     /// <summary>
     /// The UI text that stores the player score
