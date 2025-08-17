@@ -1,8 +1,8 @@
 /*
  * Author: Javier Chen Yuhong
- * Date: 13/06/2024
+ * Date: 17/08/2025
  * Description: 
- * Handles systems of the game such as HP, score and collectible count
+ * Handles systems of the game such as Scene transitions and UI 
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -54,39 +54,28 @@ public class GameManager : MonoBehaviour
     public bool tutorial = false;
     
     public int minionsDestroyed = 0;
-
-    public bool subBossDeafeated = false;
+    
     
     public bool bossDeafeated = false;
-    public void IncreaseScore(int scoreToAdd)
-    {
-        // Increase the score of the player by scoreToAdd
-        currentScore += scoreToAdd;
-
-        // Increase the collectibleCount of the player by 1
-        collectibleCount += 1;
-        scoreText.text = currentScore.ToString();
-        GameManager.instance.UpdateObjectiveText();
-    }
     
 
     public void UpdateObjectiveText()
     {
-        if (minionsDestroyed < 10)
+        if (minionsDestroyed < 1)
         {
-            currentObjective.text = $"- Vanqiuish the Dark Warlord's minions {minionsDestroyed}/10";            
+            currentObjective.text = $"- Defeat the warmonger {minionsDestroyed}/1";            
         }
-        else if (minionsDestroyed == 10 && subBossDeafeated == false)
+        else if (minionsDestroyed < 6 &&  bossDeafeated == false)
         {
-            currentObjective.text = $"Defeat General Paleskull";
+            currentObjective.text = $"Vanqiuish Starryx and destroy the remaining Warmongers {minionsDestroyed-1}/5";
         }
-        else if (minionsDestroyed == 10 && subBossDeafeated == true && bossDeafeated == false)
+        else if (minionsDestroyed == 6 &&  bossDeafeated == false)
         {
-            currentObjective.text = $"Head to the portal to defeat the Dark Warlord";
+            currentObjective.text = $"Vanqiuish Starryx";
         }
-        else if ( bossDeafeated == true)
+        else if (minionsDestroyed == 6 &&  bossDeafeated == true)
         {
-            currentObjective.text = $"- Exit the ship and collect the coins {collectibleCount}/5 \n- Hint: The collect the magnifying glass to see what is supposed to be seen";
+            currentObjective.text = $"Head to the portal";
         }
     }
 
@@ -105,21 +94,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-
-    public void RestartGamelvl0()
-    {
-
-    }
-
-    public void RestartGamelvl1()
-    {
-
-    }
-
-    public void RestartGamelvl2()
-    {
-
-    }
+    
 
     /// <summary>
     /// The UI text that stores the player score
@@ -139,19 +114,10 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    /// <summary>
-    /// Activates the interaction text UI element.
-    /// </summary>
-    public void RaycastOn()
+    public void RestartGame()
     {
-        interactionText.gameObject.SetActive(true);
+        minionsDestroyed = 0;
+        bossDeafeated = false;
     }
-
-    /// <summary>
-    /// Deactivates the interaction text UI element.
-    /// </summary>
-    public void RaycastOff()
-    {
-        interactionText.gameObject.SetActive(false);
-    }
+    
 }
