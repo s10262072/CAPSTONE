@@ -115587,6 +115587,17 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 04bc47ba6e133a9498297a3f94cd9a2b, type: 3}
+    - target: {fileID: 2789841763982032915, guid: 2ef7504ca5b8a7a4e8140401e80348cb,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tTransform 'mixamorig:LeftShoulder'\n\tTransform 'mixamorig:RightFoot'\n\tTransform
+        'mixamorig:Head'\n\tTransform 'mixamorig:LeftUpLeg'\n\tand more ...\n\tFrom
+        animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     - target: {fileID: 3396786018867618124, guid: 2ef7504ca5b8a7a4e8140401e80348cb,
         type: 3}
       propertyPath: Gravity
@@ -115720,6 +115731,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1077094584}
+    - targetCorrespondingSourceObject: {fileID: 5252984558388595940, guid: 2ef7504ca5b8a7a4e8140401e80348cb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1077094593}
   m_SourcePrefab: {fileID: 100100000, guid: 2ef7504ca5b8a7a4e8140401e80348cb, type: 3}
 --- !u!4 &1077094571 stripped
 Transform:
@@ -115768,8 +115783,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9980bbd847c56944490bd18798552fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  livesText: {fileID: 907357433}
   lives: 5
+  livesText: {fileID: 907357433}
+--- !u!114 &1077094593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077094572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e13e1e3e19c5840bcc0f0bd9d2719f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2091187704}
+  weaponCollider: {fileID: 0}
+  isAttacking: 0
 --- !u!1001 &1080588478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -576078,6 +576108,12 @@ PrefabInstance:
 --- !u!4 &2091187703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 04bc47ba6e133a9498297a3f94cd9a2b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091187702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2091187704 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 04bc47ba6e133a9498297a3f94cd9a2b,
     type: 3}
   m_PrefabInstance: {fileID: 2091187702}
   m_PrefabAsset: {fileID: 0}

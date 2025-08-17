@@ -89,16 +89,17 @@ public class enemyAI : MonoBehaviour
         }
     }
 
+    // Damage to player happens here
     private void OnTriggerStay(Collider other)
     {
         if (currentState == State.Attacking && other.CompareTag("Player"))
         {
-            PlayerStats stats = other.GetComponent<PlayerStats>();
-            if (stats != null && Time.time - lastAttackTime >= attackCooldown)
+            PlayerLives livesSystem = other.GetComponent<PlayerLives>();
+            if (livesSystem != null && Time.time - lastAttackTime >= attackCooldown)
             {
                 lastAttackTime = Time.time;
-                stats.TakeDamage(10); // You can change the damage amount here
-                Debug.Log("Enemy touched player and dealt damage");
+                livesSystem.LoseLife(); // Always 1 life lost
+                Debug.Log("Enemy touched player and removed 1 life");
             }
         }
     }

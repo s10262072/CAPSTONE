@@ -2,34 +2,46 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public Animator animator;
-    public Collider weaponCollider;
-
-    [HideInInspector] public bool isAttacking = false;
+    public int damage = 1;                  // how much damage player deals
+    public float attackRange = 2f;          // how close enemy must be
+    public LayerMask enemyLayer;            // assign "Enemy" layer in Inspector
+    private Animator animator;
 
     void Start()
     {
-        weaponCollider.enabled = false;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Mouse0)) // left mouse click
         {
-            isAttacking = true; // Start attack
+            Attack();
         }
     }
 
-    // Animation Events
-    public void EnableWeaponHitbox()
+    void Attack()
     {
-        isAttacking = true;
-        weaponCollider.enabled = true;
+        // Trigger attack animation
+        animator.SetTrigger("Attack");
+
+        // Detect enemies in range
+        Collider[] hitEnemies = Physics.OverlapSphere(transform.position, attackRange, enemyLayer);
+
+        foreach (Collider enemy in hitEnemies)
+        {
+            EnemyMelee enemyScript = enemy.GetComponent<EnemyMelee>();
+            if (enemyScript != null)
+            {
+                enemyScript.TakeDamage(damage);
+            }
+        }
     }
 
-    public void DisableWeaponHitbox()
+    // Draw attack range in Scene view
+    void OnDrawGizmosSelected()
     {
-        isAttacking = false;
-        weaponCollider.enabled = false;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }

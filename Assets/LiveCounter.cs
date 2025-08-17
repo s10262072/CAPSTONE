@@ -1,33 +1,45 @@
 using UnityEngine;
-using TMPro;  // <- import TMP
+using TMPro;  // Needed for TextMeshPro
 
 public class PlayerLives : MonoBehaviour
 {
-    public TextMeshProUGUI livesText;   // drag your TMP text here
-    public int lives = 5;               // starting lives
+    [Header("Lives Settings")]
+    public int lives = 10;  // starting lives
+    public TextMeshProUGUI livesText; // drag your TMP text object here in Inspector
 
     void Start()
     {
         UpdateLivesUI();
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            LoseLife();
-        }
-    }
-
-    void LoseLife()
+    public void LoseLife()
     {
         lives--;
-        if (lives < 0) lives = 0;
+
+        if (lives < 0)
+            lives = 0;
+
         UpdateLivesUI();
+
+        Debug.Log("Player lost a life! Remaining: " + lives);
+
+        if (lives <= 0)
+        {
+            Die();
+        }
     }
 
     void UpdateLivesUI()
     {
-        livesText.text = "Lives: " + lives;
+        if (livesText != null)
+        {
+            livesText.text = "Lives: " + lives;
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player has no lives left! Game Over!");
+        // You can add respawn, restart, or game over logic here
     }
 }
