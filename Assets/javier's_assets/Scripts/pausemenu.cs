@@ -61,6 +61,7 @@ public class PauseMenu : SharedMenu
         ResumeGame();
         UnlockMouse();
         GameManager.instance.GoToScene(mainMenuIndex);
+        GameManager.instance.RestartGame();
     }
     
 

@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
         {
             currentObjective.text = $"Vanqiuish Starryx and destroy the remaining Warmongers {minionsDestroyed-1}/5";
         }
-        else if (minionsDestroyed < 6 &&  bossDeafeated == true)
+        else if (minionsDestroyed == 6 &&  bossDeafeated == false)
         {
             currentObjective.text = $"Vanqiuish Starryx";
         }
@@ -112,6 +112,12 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void RestartGame()
+    {
+        minionsDestroyed = 0;
+        bossDeafeated = false;
     }
     
 }
